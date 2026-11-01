@@ -1,17 +1,13 @@
-# f5_danhsach
+# F5_231A010308 - Danh sách và lưới trong Flutter
 
-A new Flutter project.
+Sinh viên: Nguyễn Phạm Chí Thành - MSSV 231A010308 - Lớp CNTT-LTDD
 
-## Getting Started
+## Bài nâng cao
 
-This project is a starting point for a Flutter application.
+**NC3 - SnackBar "Hoàn tác" sau khi xóa:** Trước khi xóa lưu lại vị trí và phần tử.
+Sau khi xóa hiện SnackBar có nút "Hoàn tác"; bấm vào thì chèn món lại đúng vị trí cũ bằng
+`setState(() => _ds.insert(viTri, sp))`.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**NC4 - Lưới tự đổi số cột:** Đổi `SliverGridDelegateWithFixedCrossAxisCount` thành
+`SliverGridDelegateWithMaxCrossAxisExtent`. Mỗi ô có chiều rộng tối đa cố định,
+Flutter tự tính số cột theo bề ngang màn hình (dọc ít cột, xoay ngang nhiều cột hơn).
